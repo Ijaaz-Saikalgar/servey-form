@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- custom styles  -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Servey form</title>
+</head>
+
+<body>
+
+    <main class="main-container">
+        <div class="heading-wrapper">
+            <h1 class="heading">Customer Efforts Score</h1>
+            <p class="sub-heading">Customer Satisfaction Survey</p>
+        </div>
+        <div class="servey-wrapper">
+            <div class="servey-container" id="servey-container">
+                <!-- question list  -->
+                <h2 class="question display-question">1. How easy was it to navigate our website/mobile app?</h2>
+                <h2 class="question">2. How would you rate the value for money of our product/service?</h2>
+                <h2 class="question">3. How likely are you to recommend our product/service to a friend or colleague?</h2>
+                <h2 class="question">4. On a scale of 1 to 5, how satisfied are you with the quality of our product/service?</h2>
+                <h2 class="question">5. How would you rate the helpfulness of our customer support team?</h2>
+
+                <!-- action list  -->
+                <ul class="action-list">
+                    <li><img class="cry-img" src="./media/rate-low.png" alt="rate-low">
+                        <span class="rating-text">Low rating</span>
+                    </li>
+
+                    <li>
+                        <label for="rate1">1</label>
+                        <input type="radio" id="rate" name="ans">
+                    </li>
+                    <li>
+                        <label for="rate2">2</label>
+                        <input type="radio" id="rate" name="ans">
+                    </li>
+                    <li>
+                        <label for="rate3">3</label>
+                        <input type="radio" id="rate" name="ans">
+                    </li>
+                    <li>
+                        <label for="rate4">4</label>
+                        <input type="radio" id="rate" name="ans">
+                    </li>
+                    <li>
+                        <label for="rate5">5</label>
+                        <input type="radio" id="rate" name="ans">
+                    </li>
+
+                    <li><img class="happy-img" src="./media/rate-high.png" alt="rate-high">
+                        <span class="rating-text">High rating</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- actionable button  -->
+        <div class="btn-wrapper">
+            <button class="btn prev-hide" id="prevbtn">Prevoius</button>
+            <span class="show-required">Please mark any one for next question</span>
+            <button class="btn" id="nextbtn">Next</button>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
