@@ -228,4 +228,6 @@ input[type="radio"]:checked::before {
 
 .btn-wrapper span.show-required{
     display: block;
+    color: red;
+    font-weight: 700;
 }
